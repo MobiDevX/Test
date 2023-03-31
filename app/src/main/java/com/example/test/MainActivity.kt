@@ -24,10 +24,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     object CounterSingleton {
+        private var counter = 7
         init {
+            counter = 0
             println("Ко мне обратились впервые")
         }
-        private var counter = 1
+
+        // counter = 3
         fun increment() = counter++
     }
 
