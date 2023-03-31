@@ -30,8 +30,4 @@ class MainActivity : AppCompatActivity() {
         private var counter = 1
         fun increment() = counter++
     }
-
-    fun demo() {
-
-    }
 }
