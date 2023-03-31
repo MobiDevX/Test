@@ -13,9 +13,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun OnButtonClick(view: View){
-        for (i in 1 until 5) {
-            var text = CounterSingleton.increment().toString()
-            Toast.makeText(this, text, Toast.LENGTH_SHORT)
+        for (i in 1 .. 3) {
+            Toast.makeText(this,
+                CounterSingleton.increment().toString(),
+                Toast.LENGTH_SHORT)
                 .show()
         }
         Toast.makeText(this, R.string.correct_toast,
@@ -24,17 +25,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     object CounterSingleton {
-        private var counter = 7
+        private var counter = 0
         init {
-            counter = 0
+            counter = 1
             println("Ко мне обратились впервые")
         }
 
-        // counter = 3
         fun increment() = counter++
-    }
-
-    fun demo() {
-
     }
 }
