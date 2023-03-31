@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Test</string>
+    <string name="image_text">wombat</string>
+    <string name="button_text">True</string>
+    <string name="false_button">False</string>
+    <string name="next_button">Next</string>
+    <string name="correct_toast">Correct!</string>
+    <string name="incorrect_toast">Incorrect!</string>
 </resources>
