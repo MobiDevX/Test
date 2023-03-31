@@ -23,4 +23,5 @@ class MainActivity : AppCompatActivity() {
             println(m)
         }
     }
+    object NoMoviesList
 }
